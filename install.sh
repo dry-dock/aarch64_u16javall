@@ -8,21 +8,21 @@ apt-get update
 
 echo "================ Installing gradle ================="
 wget -nv https://services.gradle.org/distributions/gradle-4.6-all.zip
-unzip -qq gradle-4.6-all.zip -d /usr/local 
+unzip -qq gradle-4.6-all.zip -d /usr/local
 rm -f gradle-4.6-all.zip
 ln -fs /usr/local/gradle-4.2.1/bin/gradle /usr/bin
 echo 'export PATH=$PATH:/usr/local/gradle-4.6/bin' >> /etc/drydock/.env
 
 echo "================ Installing apache-maven-3.5.3 ================="
 wget -nv http://redrockdigimark.com/apachemirror/maven/maven-3/3.5.3/binaries/apache-maven-3.5.3-bin.tar.gz
-tar xzf apache-maven-3.5.3-bin.tar.gz -C /usr/local  
+tar xzf apache-maven-3.5.3-bin.tar.gz -C /usr/local
 rm -f apache-maven-3.5.3-bin.tar.gz
 ln -fs /usr/local/apache-maven-3.5.3/bin/mvn /usr/bin
 echo 'export PATH=$PATH:/usr/local/apache-maven-3.5.3/bin' >> /etc/drydock/.env
 
 echo "================ Installing apache-ant-1.10.1 ================="
 wget -nv https://archive.apache.org/dist/ant/binaries/apache-ant-1.10.1-bin.tar.gz
-tar xzf apache-ant-1.10.1-bin.tar.gz -C /usr/local  
+tar xzf apache-ant-1.10.1-bin.tar.gz -C /usr/local
 rm -f apache-ant-1.10.1-bin.tar.gz
 ln -fs /usr/local/apache-ant-1.10.1/bin/ant /usr/bin
 echo 'export ANT_HOME=/usr/local/apache-ant-1.10.1' >> /etc/drydock/.env
