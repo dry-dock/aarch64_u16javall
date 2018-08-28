@@ -7,6 +7,7 @@ Available jdk versions:
 
 1. openjdk7
 2. openjdk8
+4. openjdk10
 3. oraclejdk8
 
 **Services:**
