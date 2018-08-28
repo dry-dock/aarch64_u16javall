@@ -7,7 +7,7 @@ apt-get clean
 apt-get update
 
 GRADLE_VERSION="4.9"
-echo "================ Installing $GRADLE_VERSION ================="
+echo "================ Installing gradle $GRADLE_VERSION ================="
 wget -nv https://services.gradle.org/distributions/gradle-$GRADLE_VERSION-all.zip
 unzip -qq gradle-$GRADLE_VERSION-all.zip -d /usr/local && rm -f gradle-$GRADLE_VERSION-all.zip
 ln -fs /usr/local/gradle-$GRADLE_VERSION/bin/gradle /usr/bin
