@@ -21,11 +21,3 @@ shipctl jdk set openjdk10
 printf "\n"
 java -version
 printf "\n"
-
-shipctl jdk set oraclejdk10
-printf "\n"
-java -version
-printf "\n"
-
-
-
