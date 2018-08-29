@@ -7,3 +7,6 @@ add-apt-repository -y ppa:webupd8team/java
 apt-get update
 apt-get install -y oracle-java8-installer
 
+update-alternatives --set java /usr/lib/jvm/java-8-oracle/jre/bin/java
+update-alternatives --set javac /usr/lib/jvm/java-8-oracle/bin/javac
+
