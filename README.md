@@ -11,6 +11,9 @@ Available jdk versions:
 4. openjdk11
 3. oraclejdk8
 
+u16javall for ARM 64 architecture Docker Hub repo: [drydock/aarch64_u16javall](https://hub.docker.com/r/drydock/aarch64_u16javall/)
+
+  
 **Services:**
 
-use this link http://github.com/dry-dock/aarch64_u16all to refer to the versions of the services
+Please refer [u16all](https://github.com/dry-dock/aarch64_u16all) for a list of supported services
