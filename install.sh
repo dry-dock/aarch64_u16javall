@@ -13,14 +13,14 @@ unzip -qq gradle-$GRADLE_VERSION-all.zip -d /usr/local && rm -f gradle-$GRADLE_V
 ln -fs /usr/local/gradle-$GRADLE_VERSION/bin/gradle /usr/bin
 echo 'export PATH=$PATH:/usr/local/gradle-$GRADLE_VERSION/bin' >> /etc/drydock/.env
 
-APACHE_MAVEN="3.5.4"
+APACHE_MAVEN="3.6.0"
 echo "================ Installing apache maven $APACHE_MAVEN ================="
 wget -nv http://redrockdigimark.com/apachemirror/maven/maven-3/$APACHE_MAVEN/binaries/apache-maven-$APACHE_MAVEN-bin.tar.gz
 tar xzf apache-maven-$APACHE_MAVEN-bin.tar.gz -C /usr/local && rm -f apache-maven-$APACHE_MAVEN-bin.tar.gz
 ln -fs /usr/local/apache-maven-$APACHE_MAVEN/bin/mvn /usr/bin
 echo 'export PATH=$PATH:/usr/local/apache-maven-$APACHE_MAVEN/bin' >> /etc/drydock/.env
 
-APACHE_ANT=1.10.6
+APACHE_ANT=1.10.5
 echo "================ Installing apache ant $APACHE_ANT ================="
 wget -nv https://archive.apache.org/dist/ant/binaries/apache-ant-$APACHE_ANT-bin.tar.gz
 tar xzf apache-ant-$APACHE_ANT-bin.tar.gz -C /usr/local && rm -f apache-ant-$APACHE_ANT-bin.tar.gz
